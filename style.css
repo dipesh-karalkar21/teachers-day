@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("Untitled (2).png");
+}
+.main{
+    position: relative;
+    top: 65px;
+    transform:scale(1.0,1.0);
+    animation: size-change 0.5s linear;
+}
+.main h2{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;   
+}
+.main .i{
+    width: 600px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+.button button{
+    transform: scale(6.0,6.0);
+}
+@keyframes size-change{
+    0%{
+        transform: scale(0.1,0.1);
+    }
+}
+@media screen and (max-width:600px){
+    .main{
+        position: relative;
+        top: 70px;
+        transform:scale(0.8,0.8);
+    }
+    
+        .main h2{
+            color: white;
+            font-weight: bold;
+            font-size: 35px;   
+        }
+        .main .i{
+            width: 600px;
+        }
+        
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+.button button{
+    transform: scale(2.0,2.0);
+}
+}
